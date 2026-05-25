@@ -1,0 +1,6 @@
+{
+  "databaseChangeLog": [
+    { "include": { "file": "db/changelog/03-create-merchants-table.json" } },
+    { "include": { "file": "db/changelog/04-create-products-table.json" } }
+  ]
+}
