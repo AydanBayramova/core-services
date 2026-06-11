@@ -1,0 +1,6 @@
+{
+  "databaseChangeLog": [
+    { "include": { "file": "db/changeLog/changes/06-create-orders-table.json" } },
+    { "include": { "file": "db/changeLog/changes/07-create-order-items-table.json" } }
+  ]
+}
