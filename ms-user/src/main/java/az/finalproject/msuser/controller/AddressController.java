@@ -4,6 +4,7 @@ import az.finalproject.msuser.dto.AddressRequest;
 import az.finalproject.msuser.dto.AddressResponse;
 import az.finalproject.msuser.service.AddressService;
 import jakarta.validation.Valid;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -22,6 +23,7 @@ public class AddressController {
 
 
     @ResponseStatus(CREATED)
+    @PostMapping
     public void addAddress(@PathVariable UUID userId, @Valid @RequestBody AddressRequest addressRequest) {
         addressService.addAddress(userId, addressRequest);
     }
