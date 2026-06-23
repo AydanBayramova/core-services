@@ -1,0 +1,9 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "db/changelog/05-create-couriers-table.json"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "db/changeLog/changes/01-create-users-table.json"
+      }
+    },
+    {
+      "include": {
+        "file": "db/changeLog/changes/02-create-addresses-table.json"
+      }
+    }
+  ]
+}

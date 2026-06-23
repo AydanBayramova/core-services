@@ -1,0 +1,70 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "5",
+        "author": "Aydan",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "couriers",
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "type": "UUID",
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "user_auth_id",
+                    "type": "UUID",
+                    "constraints": {
+                      "nullable": false,
+                      "unique": true
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "vehicle_type",
+                    "type": "VARCHAR(20)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "status",
+                    "type": "VARCHAR(20)",
+                    "defaultValue": "OFFLINE",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "current_lat",
+                    "type": "DOUBLE"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "current_lon",
+                    "type": "DOUBLE"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
